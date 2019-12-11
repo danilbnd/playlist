@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+
+body {
+  font: 300 16px/1.2 "Roboto", sans-serif;
+  background: #081c2c url(../img/bg.jpg) 50% no-repeat;
+  max-height: 100vh;
+  max-width: 100vw;
+  color: #574d72;
+}
+
+/* Layout */
+.ba-container {
+  padding: 50px 20px;
+  max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+}
+textarea {
+}
+
+.ba-playlist {
+  background: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.ba-playlist__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ba-tune {
+  border-top: 1px solid #e4e2e2;
+  padding-top: 10px;
+  margin-top: 10px;
+  position: relative;
+  list-style: none;
+}
+
+.ba-tune__heart {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+
+    width: 20px;
+    height: 20px;
+    fill: #ed5e75;
+    cursor: pointer;
+}
+
+.ba-tune__heart:hover{
+	fill: #574d72;
+}
+.ba-tune__top {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.ba-tune__name {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.ba-tune__author{
+	text-transform: capitalize;
+
+}
